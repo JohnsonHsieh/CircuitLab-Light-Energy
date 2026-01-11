@@ -175,7 +175,7 @@ const App: React.FC = () => {
         <div>
           <h1 className="text-3xl font-bold text-blue-700 flex items-center gap-2">
             <Zap className="text-yellow-400" />
-            電路實驗室 4.6：光與電的秘密
+            小小科學家：電路模擬實驗室
           </h1>
           <p className="text-gray-500 mt-1">混合串並聯模擬。觀察不同負載的亮度層次與耗能表現！</p>
         </div>
