@@ -23,12 +23,29 @@
   - 支援 `localStorage` 持久化，重開網頁紀錄依然存在。
   - 自主移除功能：複習完成後可點擊「我學會了」清理紀錄。
 
-## 🛠️ 技術架構
-- **Core**: React 19 + TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **AI**: Google Generative AI (Gemini 3.0 系列)
-- **State Management**: React Hooks (useState, useEffect, useMemo)
+## 🛠️ 安裝與運行
+
+本專案採用純前端技術開發，您可以透過以下步驟在本地環境運行：
+
+### 1. 複製專案
+```bash
+git clone [repository-url]
+cd [project-directory]
+```
+
+### 2. 環境配置
+本應用程式需要 Google Gemini API Key 才能運行 AI 解說功能。請確保您的執行環境中已配置 `process.env.API_KEY`。
+
+### 3. 啟動伺服器
+由於專案使用 ES Modules，建議透過本地 Web 伺服器開啟：
+```bash
+# 使用 npx serve (推薦)
+npx serve .
+
+# 或使用 Python 內建伺服器
+python -m http.server 8000
+```
+開啟瀏覽器並訪問 `http://localhost:3000` (或指定埠號) 即可開始實驗。
 
 ## 🎓 適合對象
 - **國小中高年級學生**：探索自然科學電學單元。
