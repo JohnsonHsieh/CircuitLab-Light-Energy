@@ -11,7 +11,7 @@
 | ![電路模擬主介面](./screenshots/main_ui.png) | ![電力公式運算](./screenshots/formulas.png) | ![測驗與錯題紀錄](./screenshots/quiz_book.png) |
 | *直觀的組件配置與即時亮度反應* | *深入淺出的歐姆定律與功率計算* | *自動收錄弱點，鞏固科學知識* |
 
-> **提示**：建議將您提供的三張截圖存放於專案根目錄的 `screenshots/` 資料夾下，並分別命名為 `main_ui.png`, `formulas.png`, `quiz_book.png` 以確保圖片正常顯示。
+> **提示**：請將您上傳的三張截圖依序重新命名為 `main_ui.png`、`formulas.png` 與 `quiz_book.png`，並存放於專案根目錄下的 `screenshots/` 資料夾內，以確保 README 能正常顯示預覽圖。
 
 ## 🌟 核心特色
 
@@ -29,9 +29,16 @@
 ### 3. 測驗與學習紀錄
 - **智慧題庫**：從 50 題專業題庫中隨機抽選，確保每次學習都有新發現。
 - **科學家錯題本**：
-  - 自動收錄答錯題目並提供「複習重點」。
+  - 自動收錄答錯題目並提供詳細的「複習重點」。
   - 支援 `localStorage` 持久化，即使重啟瀏覽器紀錄依然存在。
-  - 支援自主移除功能，學會後即可點擊「我學會了」清理紀錄。
+  - 支援自主移除功能：學會後即可點擊「我學會了」清理紀錄，讓學習目標更明確。
+
+## 🛠️ 技術架構
+- **Core**: React 19 + TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **AI**: Google Generative AI (Gemini 3.0 系列)
+- **Deployment**: GitHub Actions + GitHub Pages
 
 ## 🚀 佈署到 GitHub Pages
 
@@ -48,30 +55,13 @@
 將程式碼推送到 `main` 分支後，Actions 會自動觸發構建：
 ```bash
 git add .
-git commit -m "Update README with screenshots"
+git commit -m "Update README with screenshots and title"
 git push origin main
 ```
 
 ### 第三步：啟用 GitHub Pages
 1. 前往 **Settings** > **Pages**。
 2. 在 **Build and deployment** > **Branch**，選擇 `gh-pages` 分支並儲存。
-
-## 🛠️ 開發與安裝 (本地運行)
-
-### 1. 複製專案
-```bash
-git clone [repository-url]
-cd [project-directory]
-```
-
-### 2. 環境配置
-本應用程式需要 Google Gemini API Key。本地測試時可於 `.env` 檔案中加入 `API_KEY=您的金鑰`。
-
-### 3. 啟動伺服器
-```bash
-npm install
-npm run dev
-```
 
 ## 🎓 適合對象
 - **國小中高年級學生**：探索自然科學電學單元。
