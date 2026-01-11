@@ -8,7 +8,7 @@
 
 | 1. 互動式電路模擬台 | 2. 進階科學公式教室 | 3. 智慧測驗與錯題本 |
 | :---: | :---: | :---: |
-| ![電路模擬主介面](./screenshots/main_ui.png) | ![電力公式運算](./screenshots/formulas.png) | ![測驗與錯題紀錄](./screenshots/quiz_book.png) |
+| ![電路模擬主介面](/screenshots/main_ui.png) | ![電力公式運算](/screenshots/formulas.png) | ![測驗與錯題紀錄](/screenshots/quiz_book.png) |
 | *直觀的組件配置與即時亮度反應* | *深入淺出的歐姆定律與功率計算* | *自動收錄弱點，鞏固科學知識* |
 
 > **提示**：請將您上傳的三張截圖依序重新命名為 `main_ui.png`、`formulas.png` 與 `quiz_book.png`，並存放於專案根目錄下的 `screenshots/` 資料夾內，以確保 README 能正常顯示預覽圖。
@@ -34,34 +34,40 @@
   - 支援自主移除功能：學會後即可點擊「我學會了」清理紀錄，讓學習目標更明確。
 
 ## 🛠️ 技術架構
-- **Core**: React 19 + TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **AI**: Google Generative AI (Gemini 3.0 系列)
-- **Deployment**: GitHub Actions + GitHub Pages
+- **核心**: React 19 + TypeScript
+- **樣式**: Tailwind CSS
+- **圖示**: Lucide React
+- **AI 引擎**: Google Generative AI (Gemini 3.0 系列)
 
-## 🚀 佈署到 GitHub Pages
+## 🚀 本地開發與運行
 
-本專案已配置好 GitHub Actions，您可以輕鬆完成自動化佈署：
+若要在您的電腦上執行此專案進行開發或測試，請參考以下步驟：
 
-### 第一步：設定 GitHub Secrets
-1. 前往您的 GitHub Repository 頁面。
-2. 點擊 **Settings** > **Secrets and variables** > **Actions**。
-3. 點擊 **New repository secret**。
-4. **Name** 輸入：`GEMINI_API_KEY`。
-5. **Value** 輸入：您的 Google Gemini API Key。
-
-### 第二步：推送程式碼
-將程式碼推送到 `main` 分支後，Actions 會自動觸發構建：
+### 1. 取得專案原始碼
+使用 Git 複製此儲存庫到您的電腦：
 ```bash
-git add .
-git commit -m "Update README with screenshots and title"
-git push origin main
+git clone [您的儲存庫網址]
+cd [專案資料夾名稱]
 ```
 
-### 第三步：啟用 GitHub Pages
-1. 前往 **Settings** > **Pages**。
-2. 在 **Build and deployment** > **Branch**，選擇 `gh-pages` 分支並儲存。
+### 2. 配置 API 金鑰
+本專案使用 Google Gemini API 提供 AI 實驗解說功能。
+1. 請前往 [Google AI Studio](https://aistudio.google.com/) 取得您的 API Key。
+2. 在專案根目錄建立一個 `.env` 檔案，並加入以下內容：
+```env
+API_KEY=您的_GEMINI_API_KEY
+```
+
+### 3. 安裝依賴與啟動
+確保您已安裝 Node.js，然後執行以下指令：
+```bash
+# 安裝必要的套件
+npm install
+
+# 啟動開發環境伺服器
+npm run dev
+```
+啟動後，請在瀏覽器打開終端機顯示的網址（通常是 `http://localhost:5173`）即可開始實驗。
 
 ## 🎓 適合對象
 - **國小中高年級學生**：探索自然科學電學單元。
