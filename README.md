@@ -11,8 +11,6 @@
 | ![電路模擬主介面](/screenshots/main_ui.png) | ![電力公式運算](/screenshots/formulas.png) | ![測驗與錯題紀錄](/screenshots/quiz_book.png) |
 | *直觀的組件配置與即時亮度反應* | *深入淺出的歐姆定律與功率計算* | *自動收錄弱點，鞏固科學知識* |
 
-> **提示**：請將您上傳的三張截圖依序重新命名為 `main_ui.png`、`formulas.png` 與 `quiz_book.png`，並存放於專案根目錄下的 `screenshots/` 資料夾內，以確保 README 能正常顯示預覽圖。
-
 ## 🌟 核心特色
 
 ### 1. 擬真電路模擬
